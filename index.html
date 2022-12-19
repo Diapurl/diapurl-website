@@ -12,9 +12,9 @@
 -->
     <head>
         <meta charset="utf-8">
-        <title>Diapurl</title>
+        <title>Diapurl - Website is under construction</title>
         <meta name="description" content="I'm sorry. Unfortunately the website is under construction.Please come back later.">
-        <meta name="keywords" content="Computer Science, System Integration, GNU/Linux, GNU, Linux">
+        <meta name="keywords" content="Diapurl, Liam Baumann, Computer Science, System Integration, GNU/Linux, GNU, Linux, Twitter, Instagram, TikTok, Github">
         <meta name="author" content="Liam Baumann">
         <meta name="copyright" content="Liam Baumann" />
         <meta name="robots" content="follow"/>
@@ -31,7 +31,7 @@
             }
 
             body {
-                background-color: #18191a;
+                background-color: #121212;
             }
             
             #main-container {
@@ -39,8 +39,24 @@
                 left: 50%;
                 position: absolute;
                 transform: translate(-50%, -50%);
-                background-color: #242526;
+                background-color: #000000;
                 padding: 8rem;
+            }
+
+            #pb-image {
+                width: 6vw;
+                height: 6hv;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+            
+            #main-title {
+                font-size: 3rem;
+            }
+
+            #second-title {
+                color: #8E8E8E;
+                font-weight: lighter;
             }
 
             footer {
@@ -50,7 +66,7 @@
                 position: fixed;
                 background-color: none;
                 text-align: center;
-                background-color: #242526;
+                background-color: #000000;
                 padding-top: 1rem;
             }
 
@@ -63,9 +79,9 @@
                 text-decoration: underline;
             }
             
-            #copyright {
+            #copyright-licens {
                 margin: 1rem;
-                color: #b0b3b8;
+                color: #8E8E8E;
                 font-size: 0.8rem;
             }
 
@@ -76,23 +92,31 @@
                 border: none;
                 background: #3a3b3c;
             }
-
-            h3 {
-                color: #b0b3b8;
-            }
             
             #gplv3-licens-link {
                 text-decoration: underline;
+            }
+            
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: #000000;
+                }
+              
+                #pb-image {
+                    width: 20vw;
+                    height: 20hv;
+                }
             }
         </style>
     </head>
     <body>
         <main>
             <div id="main-container">
+                <img id="pb-image" src="/assets/pb.JPG" alt="Diapurl profile image">
                 <div id="main-container-inner">
-                    <h1>Diapurl</h1>
+                    <h1 id="main-title">Diapurl</h1>
                     <hr>
-                    <h3>I'm sorry :(<br>Unfortunately the website is under construction.<br>Please come back later.</h3>
+                    <h2 id="second-title">I'm sorry :(<br>Unfortunately the website is under construction.<br>Please come back later.</h2>
                 </div>
             </div>
         </main>
@@ -101,11 +125,11 @@
                 <ul>
                     <li><a href="https://twitter.com/diapurl" target="blank_">Twitter</a></li>
                     <li><a href="https://www.instagram.com/diapurl/" target="blank_">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@diapurl" target="blank_">TikTok</a></li>
                     <li><a href="https://github.com/Diapurl" target="blank_">Github</a></li>
-                    <li><a href="https://discord.com/invite/df7BM9W4P3" target="blank_">Discord</a></li>
                 </ul>
             </div>
-            <p id="copyright">Developed by <b>Liam Baumann</b> | This website is licensed under <b></b><a id="gplv3-licens-link" href="/licens/gpl-3.0.txt" target="black_">GPLv3</a></b></p>
+            <p id="copyright-licens">Developed by <b>Liam Baumann</b> | This website is licensed under <b></b><a id="gplv3-licens-link" href="/licens/gpl-3.0.txt" target="black_">GPLv3</a></b></p>
         </footer>
     </body>
 </html>
